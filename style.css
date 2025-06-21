@@ -18,6 +18,18 @@ body {
   background: url('pictures/1000132519.jpg') no-repeat center center fixed;
   background-size: cover;
   z-index: -2;
+  /* Tablet and below */
+@media (max-width: 1024px) {
+  .container { padding: 1rem; }
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+/* Mobile and below */
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; }
+  .grid { grid-template-columns: 1fr; }
+  .section { margin: 1rem 0; }
+}
+
 }
 
 body::before {
